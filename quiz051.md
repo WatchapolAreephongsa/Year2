@@ -1,3 +1,4 @@
+
 # Python
 ```py
 
@@ -51,5 +52,5 @@ n.binirize()
 
 
 # Test
-
+<img width="1440" alt="quiz51 result" src="https://user-images.githubusercontent.com/82266864/187098847-93146836-f079-493a-abbd-769466db1134.png">
 
