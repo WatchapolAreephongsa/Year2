@@ -2,19 +2,19 @@
 # Python
 ```py
 
-class converter:
+class converter: #create class to convert the decimal number(for ip) less than 256 to binary
     def __init__(self,num):
-        self.num = num
-    def binirize(self):
-        if self.num<=255:
-            binary = ""
+        self.num = num #attribute for number
+    def binirize(self): #converting method
+        if self.num<=255: # check if number is less than 256
+            binary = "" #create empty string for binary
             for i in range (8):
-                n = 7-i
-                binary += str((self.num//2**n)%2)
+                n = 7-i #set n which will be the power of 2 in the divider
+                binary += str((self.num//2**n)%2) #divide the number by 2 to the power of n and put remainder into binary
             return binary
 
         else:
-            return "number over limit"
+            return "number over limit" #return number over limit for number more than 255
 
 n = converter(10)
 print(n.binirize())
